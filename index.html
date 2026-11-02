@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ruangkata. - Setiap kata punya ruang.</title>
+    <!-- Menggunakan Tailwind CSS untuk styling cepat dan rapi -->
+    <script src="https://tailwindcss.com"></script>
+    <!-- Google Fonts untuk Tipografi Serif & Sans-serif yang Elegan -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link
+        href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f7f4eb;
+            /* Warna krem pucat latar belakang */
+            color: #2b2b2b;
+        }
+
+        .font-serif-display {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col justify-between selection:bg-amber-200">
+
+    <!-- 1. HEADER & TOP NAV -->
+    <header
+        class="border-b border-gray-300 px-6 py-4 md:px-12 flex justify-between items-center text-xs tracking-widest uppercase">
+        <div class="font-bold text-red-700 font-serif-display lowercase text-lg">ruangkata.</div>
+        <nav class="hidden md:flex space-x-6 text-gray-600">
+            <a href="#" class="hover:text-black">Catatan</a>
+            <a href="#" class="hover:text-black">Kutipan</a>
+            <a href="#" class="hover:text-black">Laboratorium</a>
+        </nav>
+        <div class="text-gray-400">Jurnal Digital // Vol. 01</div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <main class="max-w-7xl mx-auto px-6 py-12 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        <div class="md:col-span-2">
+            <span class="text-xs text-red-700 uppercase tracking-widest block mb-4">• Tempat Kata Menemukan
+                Bentuk</span>
+            <h1 class="font-serif-display text-5xl md:text-7xl font-normal leading-tight text-gray-900">
+                Setiap kata <span class="text-red-700 font-light">*</span> <br>
+                punya ruang.
+            </h1>
+        </div>
+        <div class="border-l border-gray-300 pl-6 pt-2 text-sm text-gray-600 space-y-3">
+            <p class="uppercase text-xs tracking-wider font-semibold text-gray-400">Sebuah Eksperimen Tipografi</p>
+            <p class="leading-relaxed">Tentang kalimat yang singgah, pikiran yang tumbuh, dan keindahan di antara
+                keduanya.</p>
+            <a href="#"
+                class="text-xs tracking-widest uppercase font-bold border-b border-black pb-1 inline-block pt-2 hover:text-gray-500">Mulai
+                Menjelajah</a>
+        </div>
+    </main>
+
+    <!-- 3. RUNNING TEXT / TICKER MENU -->
+    <section
+        class="bg-amber-100 border-y border-amber-200 overflow-hidden py-3 text-xs tracking-widest uppercase font-medium">
+        <div class="flex justify-around items-center space-x-4 max-w-7xl mx-auto px-6">
+            <a href="#" class="hover:text-red-700">kata & ruang <span class="text-amber-500 ml-2">*</span></a>
+            <a href="#" class="hover:text-red-700">bentuk & makna <span class="text-amber-500 ml-2">*</span></a>
+            <a href="#" class="hover:text-red-700">huruf & rasa <span class="text-amber-500 ml-2">*</span></a>
+            <a href="#" class="hidden md:inline hover:text-red-700">kata & ruang <span
+                    class="text-amber-500 ml-2">*</span></a>
+        </div>
+    </section>
+
+    <!-- 4. TWO COLUMN CONTENT (ARTIKEL & EKSPERIMEN HURUF) -->
+    <section class="max-w-7xl mx-auto px-6 py-16 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Artikel Kiri -->
+        <div class="md:col-span-2 space-y-6">
+            <span class="text-xs tracking-widest uppercase text-gray-400">Tentang Keheningan // Part Satu</span>
+            <h2 class="font-serif-display text-3xl md:text-4xl text-gray-900">Seni menemukan jeda di tengah riuh.</h2>
+            <p class="italic text-gray-600 font-serif-display text-lg">Tidak semua ruang harus diisi. Tidak semua waktu
+                harus berlari.</p>
+            <div class="text-sm text-gray-700 leading-relaxed space-y-4 pt-4 border-t border-gray-200">
+                <p><span
+                        class="text-5xl font-serif-display text-red-700 float-left mr-3 font-normal leading-none">P</span>aduan
+                    ruang kosong memberikan napas bagi setiap kata. Cahaya memerlukan bayang agar bisa dimaknai,
+                    begitupun keheningan di dalam kalimat. Tanpa jeda, yang tersisa hanyalah kebisingan tanpa arti.</p>
+                <p>Kita sering lupa bahwa ada puisi di setiap titik dan perhentian. Berhenti sebentar bukan berarti
+                    kehilangan arah. Kadang, justru dalam diam, kita mendengar hakikat yang paling lantang.</p>
+            </div>
+        </div>
+
+        <!-- Eksperimen Huruf Kanan -->
+        <div class="bg-white p-8 border border-gray-200 rounded shadow-sm space-y-6 flex flex-col justify-between">
+            <div>
+                <span class="text-xs tracking-widest uppercase text-gray-400 block mb-4">Eksperimen Organik</span>
+                <div class="font-serif-display text-7xl text-gray-800 font-medium">Aa.</div>
+            </div>
+            <div class="space-y-3">
+                <p class="font-serif-display text-lg font-semibold text-gray-900">Dua karakter berbeda. Satu cerita yang
+                    sama.</p>
+                <div class="text-xs text-gray-500 space-y-1 pt-2 border-t border-gray-100">
+                    <p><strong>Serif:</strong> Klasik, tegas, memiliki tradisi.</p>
+                    <p><strong>Sans-serif:</strong> Modern, lugas, kontemporer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. GREEN QUOTE BANNER -->
+    <section class="bg-[#1e2f23] text-[#ebdcc5] py-20 px-6 text-center relative overflow-hidden">
+        <span class="absolute top-6 left-12 text-7xl font-serif-display opacity-10">“</span>
+        <div class="max-w-3xl mx-auto space-y-6">
+            <p class="font-serif-display text-2xl md:text-4xl leading-relaxed font-light">
+                “Pelan-pelan bukan berarti tertinggal.<br>
+                Bisa jadi, kamu sedang <span class="italic font-normal text-amber-300">menikmati perjalanan</span>.”
+            </p>
+            <span class="text-xs tracking-widest uppercase opacity-60 block pt-4">— Jurnal Ruang Kata // 2026</span>
+        </div>
+    </section>
+
+    <!-- 6. THREE GRID BOXES (CONCEPT SHOWCASE) -->
+    <section class="max-w-7xl mx-auto px-6 py-16 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Box 1: Jeda -->
+        <div class="bg-amber-400 p-8 flex flex-col justify-between min-h-[200px] text-amber-950">
+            <span class="text-[10px] tracking-widest uppercase opacity-60">01 // LETTER SPACING</span>
+            <div class="text-4xl font-light tracking-[0.4em] font-serif-display my-4">j e d a</div>
+            <p class="text-xs opacity-75">Memberi jarak untuk kenyamanan visual.</p>
+        </div>
+        <!-- Box 2: Tumbuh -->
+        <div class="bg-red-800 p-8 flex flex-col justify-between min-h-[200px] text-red-50">
+            <span class="text-[10px] tracking-widest uppercase opacity-60">02 // TEXT STYLE</span>
+            <div class="text-4xl font-serif-display italic font-semibold my-4">tumbuh.</div>
+            <p class="text-xs opacity-75">Karakter yang hidup beradaptasi dengan makna.</p>
+        </div>
+        <!-- Box 3: Berani -->
+        <div class="bg-gray-200 p-8 border border-gray-300 flex flex-col justify-between min-h-[200px] text-gray-800">
+            <span class="text-[10px] tracking-widest uppercase opacity-60">03 // TEXT TRANSFORM</span>
+            <div class="text-3xl font-bold tracking-widest uppercase my-4">BERANI</div>
+            <p class="text-xs opacity-75">Ketegasan visual yang menarik perhatian utama.</p>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER SECTION -->
+    <footer class="border-t border-gray-300 bg-[#f1ede2] px-6 py-12 md:px-12 text-center space-y-6">
+        <div class="max-w-xl mx-auto space-y-3">
+            <h3 class="font-serif-display text-xl text-gray-800">Kata yang sama. Rasa yang berbeda.</h3>
+            <p class="text-xs text-gray-500 italic">Kalimat sederhana bisa jadi istimewa. Tergantung bagaimana kamu
+                memberinya ruang.</p>
+        </div>
+
+        <div
+            class="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center text-[10px] tracking-widest uppercase text-gray-400 space-y-4 md:space-y-0">
+            <div class="font-bold text-red-700 font-serif-display lowercase text-sm">ruangkata.</div>
+            <div>© 2026 Ruangkata Studio. Hak Cipta Dilindungi.</div>
+            <div>Laporan Dok // Vol. 01</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

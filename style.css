@@ -1,0 +1,463 @@
+/* ==========================================================================
+   1. Pengaturan Dasar & Variabel Warna
+   ========================================================================== */
+:root {
+    --bg-main: #f7f4eb;
+    /* Krem hangat latar belakang */
+    --bg-card: #ffffff;
+    /* Putih bersih untuk kartu */
+    --bg-dark: #1e2f23;
+    /* Hijau forest tua */
+    --bg-ticker: #fbf8f0;
+    /* Krem muda untuk running text */
+    --color-text: #2b2b2b;
+    /* Abu-abu gelap (hampir hitam) */
+    --color-muted: #71717a;
+    /* Abu-abu pudar */
+    --color-brand: #b91c1c;
+    /* Merah tua ruangkata */
+
+    /* Warna Kotak Konsep */
+    --bg-box-1: #fbbf24;
+    /* Kuning jeda */
+    --bg-box-2: #991b1b;
+    /* Merah tumbuh */
+    --bg-box-3: #e4e4e7;
+    /* Abu-abu berani */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--color-text);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Container Pembatas Lebar Konten */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ==========================================================================
+   2. Header & Navigasi
+   ========================================================================== */
+.main-header {
+    border-bottom: 1px solid #d4d4d8;
+    padding: 16px 24px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    tracking-letter: 0.1em;
+}
+
+.logo {
+    font-size: 20px;
+    color: var(--color-brand);
+    font-weight: 700;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: var(--color-muted);
+    text-decoration: none;
+    margin: 0 12px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-text);
+}
+
+.volume-tag {
+    color: #a1a1aa;
+}
+
+/* ==========================================================================
+   3. Hero Section
+   ========================================================================== */
+.hero-section {
+    padding: 60px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.hero-left .tagline {
+    font-size: 11px;
+    color: var(--color-brand);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.hero-left h1 {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.hero-left h1 span {
+    color: var(--color-brand);
+    font-weight: 300;
+}
+
+.hero-right {
+    border-left: 1px solid #d4d4d8;
+    padding-left: 24px;
+}
+
+.hero-right .sub-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #a1a1aa;
+    margin-bottom: 12px;
+}
+
+.hero-right p {
+    font-size: 14px;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.cta-link {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-text);
+    padding-bottom: 4px;
+    display: inline-block;
+    transition: opacity 0.2s;
+}
+
+.cta-link:hover {
+    opacity: 0.6;
+}
+
+/* ==========================================================================
+   4. Ticker Section (Menu Bar Tengah)
+   ========================================================================== */
+.ticker-section {
+    background-color: var(--bg-ticker);
+    border-top: 1px solid #e4e4e7;
+    border-bottom: 1px solid #e4e4e7;
+    padding: 12px 0;
+}
+
+.ticker-wrapper {
+    display: flex;
+    justify-content: space-around;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.ticker-wrapper a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.ticker-wrapper a:hover {
+    color: var(--color-brand);
+}
+
+.ticker-wrapper span {
+    color: #f59e0b;
+    margin-left: 8px;
+}
+
+/* ==========================================================================
+   5. Artikel & Eksperimen Huruf
+   ========================================================================== */
+.content-section {
+    padding: 80px 0;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 48px;
+}
+
+.article-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article-side .meta {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #a1a1aa;
+    letter-spacing: 0.05em;
+}
+
+.article-side h2 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.article-sub {
+    font-size: 18px;
+    color: #4b5563;
+    font-style: italic;
+}
+
+.article-body {
+    border-top: 1px solid #e4e4e7;
+    padding-top: 24px;
+    font-size: 14px;
+    color: #3f3f46;
+}
+
+.article-body p {
+    margin-bottom: 16px;
+}
+
+.dropcap {
+    font-size: 48px;
+    color: var(--color-brand);
+    float: left;
+    margin-right: 8px;
+    line-height: 1;
+}
+
+/* Kartu Eksperimen Huruf Kanan */
+.card-side {
+    background-color: var(--bg-card);
+    border: 1px solid #e4e4e7;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #a1a1aa;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.large-glyph {
+    font-size: 72px;
+    color: #27272a;
+}
+
+.card-footer h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.card-footer-meta {
+    font-size: 11px;
+    color: #71717a;
+    border-top: 1px solid #f4f4f5;
+    padding-top: 12px;
+}
+
+/* ==========================================================================
+   6. Green Quote Banner
+   ========================================================================== */
+.quote-banner {
+    background-color: var(--bg-dark);
+    color: #ebdcc5;
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.quote-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.quote-text {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.quote-text span.italic {
+    font-style: italic;
+    color: #fcd34d;
+    /* Warna amber terang */
+}
+
+.quote-author {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.6;
+}
+
+/* ==========================================================================
+   7. Three Grid Boxes (Showcase)
+   ========================================================================== */
+.showcase-section {
+    padding: 60px 0;
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.box {
+    padding: 32px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box .box-num {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    opacity: 0.6;
+}
+
+.box p {
+    font-size: 12px;
+}
+
+/* Modifikasi Masing-masing Box */
+.box-jeda {
+    background-color: var(--bg-box-1);
+    color: #451a03;
+}
+
+.box-jeda .box-title {
+    font-size: 36px;
+    letter-spacing: 0.3em;
+    font-weight: 300;
+}
+
+.box-tumbuh {
+    background-color: var(--bg-box-2);
+    color: #fef2f2;
+}
+
+.box-tumbuh .box-title {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.box-berani {
+    background-color: var(--bg-box-3);
+    color: #27272a;
+    border: 1px solid #d4d4d8;
+}
+
+.box-berani .box-title {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+/* ==========================================================================
+   8. Footer
+   ========================================================================== */
+.main-footer {
+    background-color: #f1ede2;
+    border-top: 1px solid #d4d4d8;
+    padding: 48px 0 24px 0;
+    text-align: center;
+}
+
+.footer-top {
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+}
+
+.footer-top h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.footer-top p {
+    font-size: 12px;
+    color: var(--color-muted);
+    font-style: italic;
+}
+
+.footer-bottom {
+    border-top: 1px solid #d4d4d8;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #a1a1aa;
+    letter-spacing: 0.1em;
+}
+
+/* ==========================================================================
+   9. Media Queries (Fungsi Responsif)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+    .hero-grid,
+    .content-grid,
+    .showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .hero-left h1 {
+        font-size: 40px;
+    }
+
+    .hero-right {
+        border-left: none;
+        border-top: 1px solid #d4d4d8;
+        padding-left: 0;
+        padding-top: 24px;
+    }
+
+    .nav-links {
+        display: none;
+        /* Menyembunyikan menu desktop pada mobile */
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
